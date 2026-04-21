@@ -2,33 +2,6 @@
 
 Прокидываем WireGuard или V2Ray трафик через TURN серверы ВК-звонков. Работает так: пакеты шифруются по DTLS 1.2, потом параллельными потоками уходят на TURN сервер через TCP или UDP по протоколу STUN ChannelData. Оттуда по UDP летят на твой VPS, расшифровываются и попадают в WireGuard. Логин и пароль для TURN генерируются автоматически из ссылки на звонок.
 
-## Похожие проекты
-
-**Серверные реализации**
-- https://github.com/Urtyom-Alyanov/turn-proxy — реализация на Rust
-- https://github.com/jaykaiperson/lionheart — аналог для https://stream.wb.ru (статья: https://habr.com/ru/articles/1017410/)
-- https://github.com/kulikov0/whitelist-bypass — проброс через медиасервер SFU ВК и Яндекс Телемоста
-- https://github.com/NedgNDG/vk-proxy-auto-installer — автоустановщик через TUI
-
-**Android**
-
-Любимые:
-- https://github.com/samosvalishe/turn-proxy-android — Material 3 UI и автообновления (Kotlin)
-- https://github.com/MYSOREZ/vk-turn-proxy-android
-- https://github.com/kiper292/wireguard-turn-android — встроен прямо в WireGuard
-
-Ещё варианты:
-- https://github.com/WINGS-N/WINGSV — One UI, WireGuard, раздача VPN с root
-- https://github.com/oxsidee/vkpn — Flutter, кроссплатформенный
-- https://github.com/amurcanov/proxy-turn-vk-android — с WireGuard
-
-**iOS**
-- https://github.com/nullcstring/turnbridge
-
-**macOS**
-- https://github.com/denny4-user/vk-turn-proxy-macos-gui
-
----
 
 ## Что понадобится
 
